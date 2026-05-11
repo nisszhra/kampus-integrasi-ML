@@ -88,7 +88,15 @@ class _BenchmarkPageState extends State<BenchmarkPage>
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: Text('Benchmark Performa')),
+      appBar: AppBar(
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Benchmark Performa'),
+            Text('Nissa Zahra / 23090138', style: TextStyle(fontSize: 12)),
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(

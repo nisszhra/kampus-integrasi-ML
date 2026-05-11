@@ -67,7 +67,15 @@ class _ClassifyPageState extends State<ClassifyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Image Classifier')),
+      appBar: AppBar(
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('Image Classifier'),
+            Text('Nissa Zahra / 23090138', style: TextStyle(fontSize: 12)),
+          ],
+        ),
+      ),
       body: _modelLoading
           ? Center(
               child: Column(
