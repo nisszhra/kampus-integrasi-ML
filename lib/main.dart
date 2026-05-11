@@ -32,7 +32,18 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final titles = ['Image Classifier', 'Realtime Classifier', 'Benchmark Performa'];
+    
     return Scaffold(
+      appBar: AppBar(
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(titles[_currentIndex]),
+            Text('Nissa Zahra / 23090138', style: TextStyle(fontSize: 12)),
+          ],
+        ),
+      ),
       body: _pages[_currentIndex],
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,

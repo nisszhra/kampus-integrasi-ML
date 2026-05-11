@@ -84,15 +84,7 @@ class _RealtimeState extends State<RealtimePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Realtime Classifier'),
-            Text('Nissa Zahra / 23090138', style: TextStyle(fontSize: 12)),
-          ],
-        ),
-      ),
+
       body: _buildBody(),
     );
   }
